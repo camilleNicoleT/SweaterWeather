@@ -63,17 +63,18 @@ button:hover {
 }
 #today-weather {
     padding: 2em;
-    margin: 10%;
+    margin: 5%;
+    align-items: center;
 }
 #four-day-weather {
     padding: 3em;
-    margin-left: 2%;
+    margin: 0 1%;
     flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
 }
 .card {
-    flex-wrap: wrap;
+    
     display:flex;
     background: #000000d0;
     color: white;
@@ -88,7 +89,7 @@ button:hover {
     display: flex;
     align-items: center;
 }
-.text {
+.description {
     text-transform: capitalize;
     margin-left: 10px;
 }
@@ -99,4 +100,7 @@ h2.temp {
 footer {
     justify-content: end;
     
+}
+.loading {
+    visibility: hidden;
 }
