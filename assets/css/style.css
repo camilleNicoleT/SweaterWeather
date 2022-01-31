@@ -63,7 +63,6 @@ button:hover {
 }
 #today-weather {
     padding: 2em;
-    margin: 5%;
     align-items: center;
 }
 #four-day-weather {
@@ -73,8 +72,11 @@ button:hover {
     display: flex;
     justify-content: space-between;
 }
+.current {
+    margin-left: 10%;
+    justify-content: center;
+}
 .card {
-    
     display:flex;
     background: #000000d0;
     color: white;
@@ -97,10 +99,10 @@ h2.temp {
     margin: 0;
     margin-bottom: 0.5em;
 }
-footer {
+/* footer {
     justify-content: end;
     
-}
+} */
 .loading {
     visibility: hidden;
 }

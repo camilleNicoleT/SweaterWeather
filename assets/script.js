@@ -40,34 +40,34 @@ var weather = {
 
 
 
-var forecast = {
-getForecast: function(city){
-    fetch( "https://api.openweathermap.org/data/2.5/forecast?q=" 
-        + city 
-        + "&appid=" 
-        + apiKey
-        )
-        .then((response) => response.json())
-        .then((data) => console.log(data));
-   },
-fiveDayWeather: function(data){
-    for (let i = 0; i <= 4; i++) {
-        var { name } = data[i];
-        var {icon, description} = data.list[i].weather;
-        var {temp, humidity } = data.list[i].main;
-        var {speed} = data.list[i].wind;
-        var {uv} = data.list[i].
-      }
+// var forecast = {
+// getForecast: function(city){
+//     fetch( "https://api.openweathermap.org/data/2.5/forecast?q=" 
+//         + city 
+//         + "&appid=" 
+//         + apiKey
+//         )
+//         .then((response) => response.json())
+//         .then((data) => console.log(data));
+//    },
+// fiveDayWeather: function(data){
+//     for (let i = 0; i <= 4; i++) {
+//         var { name } = data[i];
+//         var {icon, description} = data.list[i].weather;
+//         var {temp, humidity } = data.list[i].main;
+//         var {speed} = data.list[i].wind;
+//         var {uv} = data.list[i].
+//       }
     
-    console.log(name,description,icon,temp,humidity,speed, uv);
-    document.querySelector(".city").innerText = "Weather in " + name;
-    document.querySelector(".icon").src = "https://openweathermap.org/img/wn/" + icon + ".png";
-    document.querySelector(".text").innerText = description ;
-    document.querySelector(".temp").innerText= temp + "°F";
-    document.querySelector(".humidity").innerText = "Humidity: " + humidity + "%";
-    document.querySelector(".wind").innerText = speed;
-    document.querySelector(".uv").innerText = uv;
-} }
+//     console.log(name,description,icon,temp,humidity,speed, uv);
+//     document.querySelector(".city").innerText = "Weather in " + name;
+//     document.querySelector(".icon").src = "https://openweathermap.org/img/wn/" + icon + ".png";
+//     document.querySelector(".text").innerText = description ;
+//     document.querySelector(".temp").innerText= temp + "°F";
+//     document.querySelector(".humidity").innerText = "Humidity: " + humidity + "%";
+//     document.querySelector(".wind").innerText = speed;
+//     document.querySelector(".uv").innerText = uv;
+// } }
 
 document.querySelector(".search button")
 .addEventListener('click', function() {
