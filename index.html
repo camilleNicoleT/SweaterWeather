@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap" rel="stylesheet">
+     
+      <link rel="stylesheet" href="./assets/css/style.css" />
+      
+    <title>Weather</title>
+</head>
+<body>
+    <div>
+    <header class="jumbotron ">
+        <h1 class="display-4 my-6">Sweatah Weathah <i class="fas fa-snowflake"></i> 
+          <BR> or <br><i class="fas fa-sun"></i> Sweaty Weathah?</h1>
+           </header>
+
+       <div class="card row col12 d-flex" id=search-bar>
+        <p class="lead mt-1">Enter a city to find out!</p>
+        <div class="search p-1">
+            <input type="text justify-center" class="search-bar">
+            <button>
+              <i class="fas fa-search-location"></i>
+              </button>
+        </div>
+     </div>
+      <main class="container col12">
+                  <div class="card mt-3 mb-3" id="today-weather">
+                    <h2 class="text-center mt-0">Today</h2>
+                  <h2 class="city row"></h2>
+                  <h2 class="temp row"></h2>
+                  <img src="" alt="" class="icon"/>
+                  <p class="text row"></p>
+                    <p class="humidity row"></p>
+                    <p class="wind row"></p>
+                  </div>
+                  <div>
+                  <h2 class="text-center mt-5 mb-1" id="four-day-title">Four Day Forecast</h2>
+                </div>
+            <div class="col12 w-100 container d-flex mt-1" id="four-day-weather">
+                     <div class="date-4 card p-3 row col col3 m-2 mt-1 d-flex">
+                    <h3 class="location"></h3>
+                    <h3 class="temp">23F</h3>
+                    <img src="" alt="" class="icon"/>
+                    <p class="description">Snowy</p>
+                    <p class="humidity">Humidity: 60%</p>
+                    <p class="wind">Wind speed: 6.2 km/h</p>
+                    </div>
+                    <div class="date-2 card p-3 row col col3 m-2 d-flex">
+                    <h3 class="location"></h3>
+                    <h3 class="temp">23F</h3>
+                    <img src="" alt="" class="icon"/>
+                    <p class="description">Snowy</p>
+                    <p class="humidity">Humidity: 60%</p>
+                    <p class="wind">Wind speed: 6.2 km/h</p>
+                  </div>
+                    <div class="date-3 card p-3 row col col3 m-2 d-flex">
+                    <h3 class="location"></h3>
+                    <h3 class="temp">23F</h3>
+                    <img src="" alt="" class="icon"/>
+                    <p class="description">Snowy</p>
+                    <p class="humidity">Humidity: 60%</p>
+                    <p class="wind">Wind speed: 6.2 km/h</p>
+                  </div>
+                    <div class="date-4 col col3 card row p-3 m-2 d-flex">
+                    <h3 class="location"></h3>
+                    <h3 class="temp">23F</h3>
+                    <img src="" alt="" class="icon"/>
+                    <p class="description">Snowy</p>
+                    <p class="humidity">Humidity: 60%</p>
+                    <p class="wind">Wind speed: 6.2 km/h</p>
+                  </div>
+                 
+                  </div>  
+      </main>
+    </div>
+<div><footer class="Col col12">Powered by <a href="https://www.weatherapi.com/" title="Weather API">WeatherAPI.com</a></footer>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+     <script src="./assets/script.js"></script> 
+</body>
+</html>

@@ -1,0 +1,86 @@
+body {
+    font-family: 'Supermercado One', cursive;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+    display:flex;
+    background: rgb(165, 156, 156);
+    margin:auto;
+}
+  
+.jumbotron {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: transparent;
+    color: black;
+    border-bottom: 9px solid black;
+    padding: 3px;
+    margin-bottom: 2%;
+}
+h1 {
+    font-size: 10px;
+}
+main {
+    justify-content: center;
+}
+#search-bar {
+    flex-wrap: wrap;
+    display:flex;
+    background: #000000d0;
+    color: white;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    align-items: center;
+    margin-left: 24%;
+}
+.search {
+    display: flex;
+    align-items: center;
+     opacity: 80%;
+     padding:0%;    
+   }
+   
+button {
+    margin:.5em;
+    margin-top: 0%;
+    border:none;
+    height:46px;
+    width: 46px;
+   border-radius: 30px;
+}
+button:hover {
+    background: rgb(82, 82, 100);
+}
+.container {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#today-weather {
+    padding: 2em;
+    margin: 10%;
+}
+#four-day-weather {
+    padding: 3em;
+    margin-left: 2%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+.card {
+    flex-wrap: wrap;
+    display:flex;
+    background: #000000d0;
+    color: white;
+    border-radius: 30px;
+    opacity: 80%;
+    }
+
+#four-day-title {
+    font-size: 50px;
+}
