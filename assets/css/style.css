@@ -1,13 +1,13 @@
 body {
     font-family: 'Supermercado One', cursive;
     font-size: 15px;
-    justify-content: center;
-    align-items: center;
     line-height: 1;
     display:flex;
     background: rgb(165, 156, 156);
-    margin:auto;
+    justify-content: center;
+    align-items: center;
 }
+
   
 .jumbotron {
     width: 100%;
@@ -20,6 +20,7 @@ body {
     padding: 3px;
     margin-bottom: 2%;
 }
+
 h1 {
     font-size: 10px;
 }
@@ -32,28 +33,41 @@ main {
     background: #000000d0;
     color: white;
     border-radius: 30px;
-    width: 100%;
-    max-width: 420px;
     align-items: center;
-    margin-left: 24%;
+    margin-left: 2%;
+    margin-right: 4%;
+    float: right;
+    width: 40%;
+    
 }
 .search {
-    display: flex;
-    align-items: center;
+     align-items: center;
      opacity: 80%;
      padding:0%;    
    }
+
+.searchBtn {
+    height:40px;
+    width: 40px;
    
+}
 button {
-    margin:.5em;
+     margin:.5em;
     margin-top: 0%;
     border:none;
-    height:46px;
-    width: 46px;
-   border-radius: 30px;
+    border-radius: 20px;
 }
 button:hover {
     background: rgb(82, 82, 100);
+}
+.saved-searches {
+    margin:0%;
+    padding: 20px;
+    clear: both;
+    float: left;
+    width: 40%;
+    height: 100%;
+    text-align: center;
 }
 .container {
     width: 100%;
@@ -65,12 +79,11 @@ button:hover {
     padding: 2em;
     align-items: center;
 }
-#four-day-weather {
+#five-day-weather {
     padding: 3em;
     margin: 0 1%;
-    flex-wrap: wrap;
+
     display: flex;
-    justify-content: space-between;
 }
 .current {
     margin-left: 10%;
